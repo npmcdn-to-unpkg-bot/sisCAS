@@ -1,11 +1,37 @@
-<DOCTYPE! HTML>
-<HTML>
-<HEAD>
-  <TITLE>Incio</TITLE>
-</HEAD>  
-  <BODY>
-<header> </header>
-<nav>Menu</nav>
-<article>content</article>
-  </BODY>
-</HTML>
+<!DOCTYPE html>
+
+<html ng-app="BemVindo">
+
+<head> 
+ 
+<script src="angular/angular.js"> </script>
+<script> angular.module("BemVindo", []); 
+	 angular.module("BemVindo").controller("BemVindoCtrl", 
+
+	function ($scope){
+		$scope.message = "Olá, seja bem vindo ao nosso sistema!!!";
+		
+	});
+
+</script>
+
+
+<title>Chapada Airsoft!_  º.°.º</title>
+
+</head>
+
+<body>
+	<div ng-controller="BemVindoCtrl">
+<br />
+	{{message}}
+
+
+		<br /><!-- <h1> Cadastro no sistema da CAS!</h1> -->
+		<!-- <p>Cadastro feito com AngularJS</p>   -->
+
+	</div>
+
+
+
+</body>
+</html>
