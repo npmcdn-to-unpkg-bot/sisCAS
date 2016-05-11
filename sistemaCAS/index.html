@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 
-<html ng-app="BemVindo">
+<html ng-app="CadClientes">
 
 <head> 
  
 <script src="angular/angular.js"> </script>
-<script> angular.module("BemVindo", []); 
-	 angular.module("BemVindo").controller("BemVindoCtrl", 
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 
-	function ($scope){
-		$scope.message = "Olá, seja bem vindo ao nosso sistema!!!";
-		
-	});
+<script>
+	angular.module("CadClientes", []);
+	angular.module("CadClientes").controller("CadClientesCtrl",
+
+	function ($scope) 
+	{  
+	$scope.message = "Cadastro de Membros da CAS";
+	
+	
+	} );
+
+
+
+
 
 </script>
+
+
+
 
 
 <title>Chapada Airsoft!_  º.°.º</title>
 
 </head>
 
-<body>
-	<div ng-controller="BemVindoCtrl">
-<br />
-	{{message}}
-
-
-		<br /><!-- <h1> Cadastro no sistema da CAS!</h1> -->
-		<!-- <p>Cadastro feito com AngularJS</p>   -->
+<body ng-controller="CadClientesCtrl">
+	<div class="jumbotron">
+	<h4 ng-bind="message">  </h4>
+	
 
 	</div>
 
