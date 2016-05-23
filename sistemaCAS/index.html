@@ -2,8 +2,8 @@
 
 <html ng-app="CadClientes">
 
-<head> 
- 
+<head>
+
 <script src="angular/angular.js"> </script>
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -12,31 +12,28 @@
 	angular.module("CadClientes", []);
 	angular.module("CadClientes").controller("CadClientesCtrl",
 
-	function ($scope) 
-	{  
+	function ($scope)
+	{
 	$scope.message = "Cadastro de Membros da CAS";
-	
-	
+	$scope.clientes = [
+		{nome: "bruno", codigo:"0001"},
+		{nome: "bryan", codigo:"0002"},
+		{nome: "marques", codigo:"0003"},
+	]
+
 	} );
-
-
-
 
 
 </script>
 
-
-
-
-
-<title>Chapada Airsoft!_  º.°.º</title>
+<title>Chapada Airsoft!_  ï¿½.ï¿½.ï¿½</title>
 
 </head>
 
 <body ng-controller="CadClientesCtrl">
 	<div class="jumbotron">
 	<h4 ng-bind="message">  </h4>
-	
+
 
 	</div>
 
